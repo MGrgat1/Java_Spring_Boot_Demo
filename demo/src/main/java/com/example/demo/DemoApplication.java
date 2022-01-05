@@ -10,6 +10,13 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
+/**
+ * A demo project made in Java Spring Boot
+ *
+ * Based on: Java Spring Boot Tutorial
+ * https://www.youtube.com/watch?v=9SGDpanrc8U&t=977s
+ */
+
 @SpringBootApplication
 @RestController
 public class DemoApplication {
@@ -18,17 +25,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping
-	public List<Student> hello() {
-		return List.of(
-				new Student(
-						1L,
-						"Mariam",
-						"mariam.jamal@gmail.com",
-						LocalDate.of(2000, Month.JANUARY, 5),
-						21
-				)
-		);
-	}
+
 
 }
